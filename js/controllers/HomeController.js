@@ -97,7 +97,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
-	
+	var title="IMDB + Antonio’s Top 8 Movies";
+      var owner= "Antonio";
+      var github= "https://github.com/aia7/is219s17Altamirano-p3";
 	
 	
 	
