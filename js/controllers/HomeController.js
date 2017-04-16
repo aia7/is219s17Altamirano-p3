@@ -108,7 +108,18 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
+		function like(index){
+                 movies[index].likes++;
+            }
+            function dislike(index){
+                 movies[index].dislikes++;
+
+            }
+            //function posterClick(index){
+
+                  //movies[index].posterindex++;
+                  //movies[index].posters++;
+            //}
 	
 	
 	
