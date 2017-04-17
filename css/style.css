@@ -93,6 +93,7 @@ body {
 /* This shapes your like and dislike buttons */
 .likes,
 .dislikes {
+    background-color: #008700;
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
