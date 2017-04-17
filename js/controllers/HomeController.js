@@ -108,20 +108,31 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		function like(index){
-                 movies[index].likes++;
+		
+	      $scope.like= function(index){
+                 $scope.movies[index].likes++;
+                 
             }
-            function dislike(index){
-                 movies[index].dislikes++;
+            $scope.dislike=function (index){
+                  $scope.movies[index].dislikes++;
+                  console.log("hello");
+            }
+            $scope.posterClick=function (index){
+                  if (posterindex==movies[index].length){
+
+                  }
+
+                  movies[index].posterindex++;
+                  movies[index].posters++;
+                  
+            }
+            $scope.timeText=function (minutes){
+                  var hours = Math.floor(minutes / 60); // 7
+                  var minutes = minutes % 60; // 30
+                  console.log(hours+"h"+" "+minutes+"m");
 
             }
-            //function posterClick(index){
-
-                  //movies[index].posterindex++;
-                  //movies[index].posters++;
-            //}
-	
-	
+      
 	
 	
 	
