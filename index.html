@@ -44,12 +44,12 @@
 					<p class="title">{{movie.title}} ({{movie.country}})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
 					<p class="runtime">Runtime: {{movie.runtime}}</p> 
-					<p class="released">Released: {{movie.released}} | Rated: {{movie.rating}}</p>
+					<p class="released">Released: {{movie.released | date: 'fullDate'}} Rated: {{movie.rating}}</p>
 					<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p>
 					
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movie.like}}</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislike}}</p>
+		              <span ng-click="like($index)"><p class="likes" ><i class="fa fa-thumbs-up" ></i> {{movie.likes}}</p></span>
+		              <span ng-click="dislike($index)"><p class="dislikes"><i class="fa fa-thumbs-down" ></i> {{movie.dislikes}}</p>
 		            </div>
             </div> 
         </div>
