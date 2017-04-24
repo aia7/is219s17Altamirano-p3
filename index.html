@@ -37,13 +37,13 @@
         <div class="col-md-6" ng-repeat="movie in movies"> 
             <div class="thumbnail">
 
-					<span ng-click="posterClick($index)"><img class="poster" ng-src= {{movie.posters[0]}} /></span>
+					<span><img ng-click="posterClick($index)" class="poster" ng-src= {{movie.posters[movie.posterindex]}} /></span>
 					
 					<div class="imageInfo">{{movie.posterindex}}</div>
 					
 					<p class="title">{{movie.title}} ({{movie.country}})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
-					<p class="runtime">Runtime: {{movie.runtime}}</p> 
+					<p class="runtime">Runtime: {{timeText(movie.runtime)}}</p> 
 					<p class="released">Released: {{movie.released | date: 'longDate'}} Rated: {{movie.rating}}</p>
 					<p class="websites">Websites: <a ng-href="{{movie.imdb}}">IMDB</a> | <a ng-href="{{movie.website}}">Official</a></p>
 					
