@@ -115,21 +115,33 @@ app.controller('HomeController', ['$scope', function($scope) {
             }
             $scope.dislike=function (index){
                   $scope.movies[index].dislikes++;
-                  console.log("hello");
             }
+
+            
             $scope.posterClick=function (index){
-                  if (posterindex==movies[index].length){
+                  //$scope.posterindex=0;
+                  //console.log($scope.movies[index].posters[0]);
 
+                 if ($scope.movies[index].posterindex == 0){
+                         $scope.movies[index].posterindex+=1;
                   }
-
-                  movies[index].posterindex++;
-                  movies[index].posters++;
+                  else if ($scope.movies[index].posterindex == $scope.movies[index].posters.length){
+                        $scope.movies[index].posterindex = 0;
+                         
+                  }
+                  else{
+                      $scope.movies[index].posterindex++;  
+                  }
+                
                   
             }
+                  
+            
             $scope.timeText=function (minutes){
                   var hours = Math.floor(minutes / 60); // 7
                   var minutes = minutes % 60; // 30
-                  console.log(hours+"h"+" "+minutes+"m");
+                    return  hours+"h"+" "+minutes+"m";
+                
 
             }
       
