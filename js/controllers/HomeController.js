@@ -88,7 +88,52 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
+
+      { 
+      title:      'Sleight', 
+      iscore:     5.5,
+      rating:     'R',
+      runtime:    90,
+      released:   new Date('2017', '4', '28'),
+      country:    'USA',
+      posters:    ['img/sleightposter.jpg','img/Sleight2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0111161',
+      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
+      likes:      500,
+      dislikes:   360,
+      posterindex: 0
+      },
+
+      { 
+      title:      'The Incredible Hulk', 
+      iscore:     6.8,
+      rating:     'PG-13',
+      runtime:    112,
+      released:   new Date('2008', '6', '13'),
+      country:    'USA',
+      posters:    ['img/theincrediblehulk.jpg','img/hulk.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0111161',
+      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
+      likes:      1000,
+      dislikes:   160,
+      posterindex: 0
+      },
+
+       { 
+      title:      'Ted', 
+      iscore:     7.0,
+      rating:     'R',
+      runtime:    106,
+      released:   new Date('2012', '6', '29'),
+      country:    'USA',
+      posters:    ['img/ted.jpg','img/ted2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0111161',
+      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
+      likes:      2000,
+      dislikes:   560,
+      posterindex: 0
+      }
 	
 	
   ];
